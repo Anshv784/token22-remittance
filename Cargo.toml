@@ -1,0 +1,28 @@
+[package]
+name = "remit"
+version = "0.1.0"
+edition = "2021"
+description = "Remittance stablecoin on Token-2022: fees, KYC freeze, on-chain metadata, close authority, then a re-issue with confidential transfers and a seizure authority"
+
+[dependencies]
+spl-token-2022-interface = "2.1.0"
+spl-token-metadata-interface = "0.8.0"
+spl-token-confidential-transfer-proof-generation = "0.5.1"
+spl-token-confidential-transfer-proof-extraction = "0.5.1"
+spl-associated-token-account-interface = "2.0.0"
+solana-zk-sdk = "4.0.0"
+solana-instruction = "3"
+solana-pubkey = "3"
+solana-keypair = "3"
+solana-signer = "3"
+solana-system-interface = { version = "2", features = ["bincode"] }
+solana-program-error = "3"
+bytemuck = "1"
+
+[dev-dependencies]
+litesvm = "0.10.0"
+solana-transaction = "3"
+solana-message = "3"
+solana-clock = "3"
+solana-compute-budget-interface = "3"
+solana-program-pack = "3"
